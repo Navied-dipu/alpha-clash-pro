@@ -16,8 +16,24 @@ const element= document.getElementById(elementId)
 element.classList.remove('bg-yellow-400');
  }
 
+// value set
+function getTextElementValueById(elementId){
+    const element= document.getElementById(elementId)
+    elementValueText=element.innerText
+    const value= parseInt(elementValueText);
+    return value;
+}
+function setTextElementValueById(elementId, value){
+    const element=document.getElementById(elementId);
+    element.innerText=value;
+}
 
-
+// background remove
+function getElementTextById(elementId){
+    const element=document.getElementById(elementId)
+    const text= element.innerText
+return text;
+}
 // play-ground
 function getARandomAlphabet(){
     // get an alphabet array
